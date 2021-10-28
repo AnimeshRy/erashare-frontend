@@ -20,7 +20,7 @@ const EmailForm: FunctionComponent<{ id: string }> = ({ id }) => {
 
             setMessage(data.message)
         } catch (error) {
-            setMessage(error.data.response.message)
+            setMessage(error.response.data.message)
         }
     }
 

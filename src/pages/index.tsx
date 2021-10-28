@@ -38,9 +38,11 @@ export default function Home() {
     const resetComponent = () => {
         setFile(null)
         setDownloadPageLink(null)
+        setUploadState("Upload")
     }
 
     return (
+
         <div className="flex flex-col items-center justify-center">
             <h1 className="my-4 text-3xl">Got a file? Share it with me</h1>
             <div className="flex flex-col items-center bg-gray-800 w-96 shadow-xl rounded-xl justify-center">
